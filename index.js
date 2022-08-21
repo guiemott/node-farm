@@ -5,38 +5,8 @@ const url = require('url');
 const slugify = require('slugify');
 
 const replaceTemplate = require('./modules/replaceTemplate');
-const { createPublicKey } = require('crypto');
-
-/////////////////////////////////////////////
-// Files
 
 const encoding = 'utf-8';
-
-// Blocking, synchronous way
-// const textIn = fs.readFileSync('./txt/input.txt', encoding);
-// console.log(textIn);
-
-// const textOut = `This is what we know about the avocado: ${textIn}\nCreated on ${Date.now()}`;
-// fs.writeFileSync('./txt/output.txt', textOut);
-// console.log('File written!');
-
-// Non-blocking, asynchronous way
-// fs.readFile('./txt/start.txt', encoding, (err, data1) => {
-//   if (err) return console.log('ERROR! 💥');
-
-//   fs.readFile(`./txt/${data1}.txt`, encoding, (err, data2) => {
-//     console.log(data2);
-//     fs.readFile('./txt/append.txt', encoding, (err, data3) => {
-//       console.log(data3);
-
-//       fs.writeFile('./txt/final.txt', `${data2}\n${data3}`, encoding, (err) => {
-//         console.log('Your file has been written 😄');
-//       });
-//     });
-//   });
-// });
-
-// console.log('Will read file!');
 
 /////////////////////////////////////////////
 // Server
